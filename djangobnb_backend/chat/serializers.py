@@ -28,3 +28,18 @@ class ConversationDetailSerializer(serializers.ModelSerializer):
             'users',
             'modified_at',
         )
+
+
+class ConversationMessageSerializer(serializers.ModelSerializer):
+
+    sent_to = UserDetailSerializer(many=False, read_only=True)
+    created_by = UserDetailSerializer(many=False, read_only=True)
+
+    class Meta:
+        model = ConversationMessage
+        fields = (
+            'id',
+            'body',
+            'sent_to',
+            'created_by',
+        )

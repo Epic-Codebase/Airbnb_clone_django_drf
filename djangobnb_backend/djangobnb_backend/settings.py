@@ -62,14 +62,14 @@ REST_FRAMEWORK = {
     )
 }
 
-CORS_ALLOWERD_ORIGINS = [
+CORS_ALLOWED_ORIGINS = [
     'http://127.0.0.1:8000',
     'http://127.0.0.1:3000',
     'http://137.184.235.176',
     'http://137.184.235.176:1337',
 ]
 
-CSRF_TRUESTED_ORIGINS = [
+CSRF_TRUSTED_ORIGINS = [
     'http://127.0.0.1:8000',
     'http://127.0.0.1:3000',
     'http://137.184.235.176',

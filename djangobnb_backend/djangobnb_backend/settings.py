@@ -18,7 +18,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(os.environ.get('DEBUG', False))
+DEBUG = False#bool(os.environ.get('DEBUG', False))
 #Hard coded for deployment by now
 ALLOWED_HOSTS = ['137.184.235.176']#os.environ.get('DJANGO_ALLOWED_HOSTS', '').split(' ')
 

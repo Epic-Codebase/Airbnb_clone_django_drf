@@ -19,8 +19,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(os.environ.get('DEBUG', False))
-
-ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS', '').split(' ')
+#Hard coded for deployment by now
+ALLOWED_HOSTS = ['137.184.235.176']#os.environ.get('DJANGO_ALLOWED_HOSTS', '').split(' ')
 
 AUTH_USER_MODEL = 'useraccount.User'
 

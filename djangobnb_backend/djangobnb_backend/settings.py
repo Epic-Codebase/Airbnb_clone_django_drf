@@ -69,7 +69,7 @@ CORS_ALLOWERD_ORIGINS = [
     'http://137.184.235.176:1337',
 ]
 
-CORS_TRUESTED_ORIGINS = [
+CSRF_TRUESTED_ORIGINS = [
     'http://127.0.0.1:8000',
     'http://127.0.0.1:3000',
     'http://137.184.235.176',
